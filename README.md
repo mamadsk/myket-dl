@@ -140,7 +140,6 @@ wrangler deploy
 
 <div align="center">
   <br>
-  <sub>اگه بدردت خورد، یه ⭐ به ریپو بزن</sub>
   <br><br>
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&color=00C781&section=footer" alt="footer"/>
 </div>
