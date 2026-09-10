@@ -123,7 +123,7 @@ Deploy بزن. همین.
 **با wrangler:**
 
 ```bash
-git clone https://github.com/USER/myket-dl.git && cd myket-dl
+git clone https://github.com/mamadsk/myket-dl.git && cd myket-dl
 npm install -g wrangler && wrangler login
 wrangler deploy
 ```
