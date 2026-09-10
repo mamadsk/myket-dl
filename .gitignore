@@ -1,0 +1,17 @@
+# وابستگی‌ها
+node_modules/
+
+# ابزارها و کش
+.wrangler/
+.cache/
+
+# متغیرهای محیطی و سکرت‌ها
+.env
+.dev.vars
+
+# لاگ
+*.log
+
+# سیستم‌عامل
+.DS_Store
+Thumbs.db
