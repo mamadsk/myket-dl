@@ -1,15 +1,11 @@
-<!-- پس تو هم سورس‌خونی! ایول 🥚 — دکمه‌ی «عیب‌یابی» توی UI رو امتحان کن، اونم یه چیزاییش داره -->
-
 <div align="center">
 
-<a href="https://myket-dl.mmdbots.workers.dev/">
-  <img width="100%" src="assets/banner.jpg" alt="myket-dl"/>
-</a>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=200&color=00C781&text=myket-dl&fontSize=64&fontColor=161712&fontAlignY=38&desc=Direct%20APK%20downloads%20from%20Myket&descSize=17&descAlignY=58&descColor=161712&animation=twinkling" alt="header"/>
 
 <br>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=17&duration=2800&pause=900&color=00C781&center=true&vCenter=true&width=560&lines=Direct+APK+downloader+for+Myket;Hybrid+engine%3A+official+API+%2B+web+fallback;Full+metadata%2C+screenshots+%26+ratings;Dark+mode+%2B+5+accent+themes;One+file.+Zero+dependencies." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=17&duration=2800&pause=900&color=00C781&center=true&vCenter=true&width=560&lines=Direct+APK+downloader+for+Myket;Hybrid+engine%3A+official+API+%2B+web+fallback;Full+metadata%2C+screenshots+%26+ratings;Dark+mode+%2B+5+accent+themes;One+file.+%D9%90Zero+dependencies." alt="Typing SVG"/>
 </a>
 
 ### دانلود مستقیم APK برنامه‌های رایگان مایکت — با مشخصات کامل هر برنامه
@@ -28,90 +24,26 @@
 </p>
 
 <p>
-  <a href="#-%D8%AF%D9%85%D9%88%DB%8C-%D8%AA%D8%B1%D9%85%DB%8C%D9%86%D8%A7%D9%84">💻 دمو</a> &nbsp;·&nbsp;
-  <a href="#-%D8%AF%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%D8%AA%D9%84%D9%87">🪤 داستان تله</a> &nbsp;·&nbsp;
-  <a href="#-معماری">🏗️ معماری</a> &nbsp;·&nbsp;
   <a href="#-api">📡 API</a> &nbsp;·&nbsp;
   <a href="#-%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%AF%D8%B1-%DB%B6%DB%B0-%D8%AB%D8%A7%D9%86%DB%8C%D9%87">🚀 استقرار</a> &nbsp;·&nbsp;
+  <a href="#-%D8%B1%D8%A7%D8%A8%D8%B7-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C">🎨 رابط کاربری</a> &nbsp;·&nbsp;
   <a href="https://myket-dl.mmdbots.workers.dev/api/debug?pkg=com.digikala">🩺 دیباگ زنده</a>
 </p>
-
-<br>
-
-| ۱️⃣ فایل | ۰ وابستگی | ۴ اندپوینت | ۲ موتور | ۵ تم رنگی | ∞ دانلود |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| `worker.js` | بدون npm | REST | hybrid | پالت برند | رایگان |
 
 </div>
 
 ---
 
-## 💻 دموی ترمینال
+## ⚡ چطوری کار می‌کنه
 
-یه خط کافیه:
+دو تا موتور داره. اول می‌ره سراغ API رسمی موبایل مایکت (همونی که خود اپ مایکت
+باهاش کار می‌کنه) و لینک واقعی CDN رو همراه با کد نسخه می‌گیره. اگر جواب نداد،
+fallback وب فعال می‌شه و زنجیره‌ی ریدایرکت `myket.ir/dl` رو دنبال می‌کنه.
 
-```bash
-$ curl -sL "myket-dl.mmdbots.workers.dev/api/resolve?pkg=com.digikala" \
-    | jq '{title, engine, versionCode, fileName}'
-
-{
-  "title": "دیجی‌کالا",
-  "engine": "api",
-  "versionCode": "1002003",
-  "fileName": "com.digikala-v1002003.apk"
-}
-```
-
-آدرس واقعی CDN توی `directUrl` پاسخه — نه اپ مایکت، نه لینک جعلی.
-
-## 🪤 داستان تله
-
-<table>
-  <tr>
-    <td width="42%" align="center">
-      <img src="assets/trap.jpg" width="100%" alt="trap detection"/>
-    </td>
-    <td width="58%">
-
-رفتی سراغ `myket.ir/dl`، اسم برنامه رو دادی، یه APK گرفتی…<br>
-ولی نه برنامه‌ی خودت — **APK فروشگاه مایکت**، با اسم برنامه‌ی تو!
-
-فایلش با پترن `myket-app-XXXX.apk` میاد و جعلی بودنش رو لو می‌ده.
-اینجا قبل از این‌که به دست کاربر برسه، **رد می‌شه** و لینک از موتور API
-ساخته می‌شه. تو خروجی هم روی هر نتیجه مشخصه: چیپ **API رسمی** یا **موتور وب**.
-
-یعنی هیچ‌وقت یه فایل اشتباه نصب نمی‌کنی. 🛡️
-
-</td>
-  </tr>
-</table>
-
-## 🏗️ معماری
-
-```mermaid
-flowchart TB
-    U(["client"]) --> R["GET /api/resolve?pkg=X"]
-    R --> P[/"page scraper<br>JSON-LD + specs table"/]
-    R --> C{"engine"}
-    C -->|"hybrid · api"| A["mobile API<br>authorize → appInfo → uri"]
-    A -->|ok| L["real CDN url<br>+ versionCode"]
-    A -.->|"5xx · timeout"| CB(("circuit breaker<br>30 min"))
-    A -.->|"fallback"| W["web chain<br>myket.ir/dl"]
-    C -->|"web"| W
-    W --> T{"trap check<br>myket-app-*.apk ?"}
-    T -->|"rejected"| X["502 + reason"]
-    T -->|"pass"| L
-    L --> O["merged result<br>metadata + directUrl"]
-    P --> O
-
-    style L fill:#00C781,stroke:#151610,stroke-width:2px,color:#151610
-    style O fill:#FFD23F,stroke:#151610,stroke-width:2px,color:#151610
-    style T fill:#FF7A66,stroke:#151610,stroke-width:2px,color:#151610
-    style CB fill:#B18CFF,stroke:#151610,stroke-width:2px,color:#151610
-```
-
-مشخصات برنامه (توضیحات، اسکرین‌شات، امتیاز، چنج‌لاگ، توزیع ستاره‌ها و برنامه‌های
-مشابه) از صفحه‌ی عمومی خونده می‌شه و با لینک دانلود توی یک پاسخ ادغام می‌شه.
+> [!CAUTION]
+> مسیر `/dl` بیشتر مواقع به‌جای فایل برنامه، APK فروشگاه خود مایکت رو با اسم
+> جعلی می‌فرسته. اینجا اون فایل با پترن تشخیص داده و رد می‌شه — دریافتش یعنی
+> کاربر یه فایل کاملاً اشتباه نصب می‌کنه.
 
 ## ✨ امکانات
 
@@ -163,7 +95,7 @@ flowchart TB
 > فقط برنامه‌های رایگان — برنامه‌ی پولی با کد `PAID` برمی‌گرده.
 
 <details>
-<summary><b>نمونه‌ی پاسخ کامل <code>/api/resolve</code></b> (کلیک کن)</summary>
+<summary><b>نمونه‌ی پاسخ <code>/api/resolve</code></b> (کلیک کن)</summary>
 
 ```json
 {
@@ -205,24 +137,6 @@ wrangler deploy
 - 🖼️ گالری اسکرین‌شات با درگ و لایت‌باکس
 - 📊 نمودار توزیع امتیاز با انیمیشن
 - 🩺 پنل عیب‌یابی زنده (صفحه ← auth ← ساخت لینک ← fallback)
-
-## 🕰️ تایم‌لاین
-
-| نسخه | چه خبر بود |
-|:---:|---|
-| `v4` | شروع: موتور هیبرید، UI نئو-بروتالیست، دیپ‌لینک `?p=` |
-| `v5.0` | تشخیص تله‌ی myket-app، پنل عیب‌یابی، کنسول API |
-| `v5.1` | بازطراحی باکس مشخصات، دارک‌مود با ذخیره‌سازی |
-| `v5.2` | تم رنگی (۵ رنگ)، توست‌ها و جزییات بیشتر UI |
-
-## 🗺️ رودمپ
-
-- [x] موتور هیبرید (API + fallback وب)
-- [x] تشخیص تله‌ی myket-app
-- [x] دارک‌مود + تم رنگی
-- [ ] کش edge با Workers KV
-- [ ] QR دانلود برای گوشی
-- [ ] پیشنهادت چیه؟ ایشو باز کن
 
 ## 📄 لایسنس
 
