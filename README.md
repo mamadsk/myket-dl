@@ -1,38 +1,38 @@
 <div align="center">
 
-# 📦 myket-dl
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=200&color=00C781&text=myket-dl&fontSize=64&fontColor=161712&fontAlignY=38&desc=Direct%20APK%20downloads%20from%20Myket&descSize=17&descAlignY=58&descColor=161712&animation=twinkling" alt="header"/>
 
-**دانلود مستقیم APK برنامه‌های رایگان مایکت — با مشخصات کامل هر برنامه**
+<br>
 
-<a href="https://myket-dl.mmdbots.workers.dev/">
-  <img src="https://img.shields.io/badge/LIVE%20DEMO-myket--dl.mmdbots.workers.dev-00C781?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=161712" alt="Live Demo">
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=17&duration=2800&pause=900&color=00C781&center=true&vCenter=true&width=560&lines=Direct+APK+downloader+for+Myket;Hybrid+engine%3A+official+API+%2B+web+fallback;Full+metadata%2C+screenshots+%26+ratings;Dark+mode+%2B+5+accent+themes;One+file.+%D9%90Zero+dependencies." alt="Typing SVG"/>
 </a>
 
+### دانلود مستقیم APK برنامه‌های رایگان مایکت — با مشخصات کامل هر برنامه
+
 <p>
-  <img src="https://img.shields.io/badge/version-5.2.0-00C781?style=flat-square&labelColor=161712" alt="version">
-  <img src="https://img.shields.io/badge/engine-hybrid-FFD23F?style=flat-square&labelColor=161712" alt="engine">
-  <img src="https://img.shields.io/badge/platform-cloudflare%20workers-F38020?style=flat-square&logo=cloudflare&logoColor=white&labelColor=161712" alt="platform">
-  <img src="https://img.shields.io/badge/dependencies-0-9BD6FF?style=flat-square&labelColor=161712" alt="deps">
-  <img src="https://img.shields.io/badge/UI-dark%20mode%20%2B%20themes-B18CFF?style=flat-square&labelColor=161712" alt="theme">
+  <a href="https://myket-dl.mmdbots.workers.dev/">
+    <img src="https://img.shields.io/badge/LIVE%20DEMO-https%3A%2F%2Fmyket--dl.mmdbots.workers.dev-00C781?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=161712" alt="Live Demo"/>
+  </a>
 </p>
 
-<sub>کل پروژه همین یک فایله: <code>worker.js</code> — نه وابستگی داره، نه بیلد‌تول</sub>
+<p>
+  <img src="https://img.shields.io/badge/version-5.2.0-00C781?style=for-the-badge&labelColor=161712" alt="version"/>
+  <img src="https://img.shields.io/badge/engine-hybrid-FFD23F?style=for-the-badge&labelColor=161712" alt="engine"/>
+  <img src="https://img.shields.io/badge/platform-cloudflare%20workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=161712" alt="platform"/>
+  <img src="https://img.shields.io/badge/dependencies-zero-9BD6FF?style=for-the-badge&labelColor=161712" alt="deps"/>
+</p>
+
+<p>
+  <a href="#-api">📡 API</a> &nbsp;·&nbsp;
+  <a href="#-%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%AF%D8%B1-%DB%B6%DB%B0-%D8%AB%D8%A7%D9%86%DB%8C%D9%87">🚀 استقرار</a> &nbsp;·&nbsp;
+  <a href="#-%D8%B1%D8%A7%D8%A8%D8%B7-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C">🎨 رابط کاربری</a> &nbsp;·&nbsp;
+  <a href="https://myket-dl.mmdbots.workers.dev/api/debug?pkg=com.digikala">🩺 دیباگ زنده</a>
+</p>
 
 </div>
 
 ---
-
-## 🌐 نسخه‌ی زنده
-
-**https://myket-dl.mmdbots.workers.dev/**
-
-تست سریع بدون نصب:
-
-```text
-https://myket-dl.mmdbots.workers.dev/api/resolve?pkg=com.digikala
-https://myket-dl.mmdbots.workers.dev/api/download?pkg=com.digikala
-https://myket-dl.mmdbots.workers.dev/healthz
-```
 
 ## ⚡ چطوری کار می‌کنه
 
@@ -45,64 +45,106 @@ fallback وب فعال می‌شه و زنجیره‌ی ریدایرکت `myket.
 > جعلی می‌فرسته. اینجا اون فایل با پترن تشخیص داده و رد می‌شه — دریافتش یعنی
 > کاربر یه فایل کاملاً اشتباه نصب می‌کنه.
 
-مشخصات برنامه (توضیحات، اسکرین‌شات، امتیاز، تغییرات نسخه، توزیع ستاره‌ها و
-برنامه‌های مشابه) از JSON-LD و جدول مشخصات صفحه‌ی عمومی خونده می‌شه.
+## ✨ امکانات
 
-## ✨ چی داخلشه؟
-
-- 🧠 **موتور هیبرید** — اولویت با API رسمی، fallback خودکار روی وب
-- 🕵️ **تشخیص تله** — فایل جعلی myket-app هیچ‌وقت به کاربر نمی‌رسه
-- 📊 **مشخصات کامل** — امتیاز، حجم، نسخه، چنج‌لاگ، اسکرین‌شات و برنامه‌های مشابه
-- 🌙 **دارک‌مود + تم رنگی** — ۵ رنگ اصلی، ذخیره توی `localStorage`
-- 🔗 **اشتراک نتیجه** — هر نتیجه با `?p=` لینک مستقیم داره
-- 🧪 **کنسول تست داخلی** — اندپوینت‌ها رو از خود صفحه تست کن
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🧠 موتور هیبرید</h3>
+      اولویت با API رسمی مایکت و fallback خودکار روی وب — روی هر نتیجه مشخصه لینک از کدوم موتور اومده.
+    </td>
+    <td width="50%">
+      <h3>🕵️ تشخیص تله</h3>
+      فایل جعلی <code>myket-app</code> که با اسم برنامه میاد، شناسایی و رد می‌شه. هیچ‌وقت به کاربر نمی‌رسه.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>📊 مشخصات کامل</h3>
+      امتیاز، حجم، نسخه، چنج‌لاگ، گالری اسکرین‌شات، نمودار توزیع ستاره‌ها و برنامه‌های مشابه.
+    </td>
+    <td width="50%">
+      <h3>🌙 دارک‌مود + تم رنگی</h3>
+      شب/روز و ۵ رنگ اصلی (سبز، بنفش، نارنجی، آبی، صورتی) — ذخیره توی <code>localStorage</code> بدون فلش.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🔗 اشتراک نتیجه</h3>
+      هر نتیجه با <code>?p=</code> لینک مستقیم داره. اسم بسته یا لینک صفحه‌ی مایکت — هر دو قبوله.
+    </td>
+    <td width="50%">
+      <h3>🧪 کنسول تست داخلی</h3>
+      اندپوینت‌ها رو از همون صفحه تست کن + دکمه‌ی «عیب‌یابی» که می‌گه کدوم مرحله گیر کرده.
+    </td>
+  </tr>
+</table>
 
 ## 📡 API
 
-| مسیر | چکار می‌کنه |
-|---|---|
-| `GET /api/resolve?pkg=X` | مشخصات کامل + لینک دانلود |
-| `GET /api/download?pkg=X` | استریم خود فایل APK با اسم درست |
-| `GET /api/debug?pkg=X` | گزارش مرحله‌به‌مرحله، برای وقتی که چیزی کار نمی‌کنه |
-| `GET /healthz` | سلامت سرویس |
+| متد | مسیر | چکار می‌کنه |
+|:---:|---|---|
+| <img src="https://img.shields.io/badge/GET-00C781?style=flat-square&labelColor=161712"/> | `/api/resolve?pkg=X` | مشخصات کامل + لینک دانلود |
+| <img src="https://img.shields.io/badge/GET-00C781?style=flat-square&labelColor=161712"/> | `/api/download?pkg=X` | استریم خود فایل APK با اسم درست |
+| <img src="https://img.shields.io/badge/GET-00C781?style=flat-square&labelColor=161712"/> | `/api/debug?pkg=X` | گزارش مرحله‌به‌مرحله برای عیب‌یابی |
+| <img src="https://img.shields.io/badge/GET-00C781?style=flat-square&labelColor=161712"/> | `/healthz` | سلامت سرویس |
 
 > [!TIP]
-> به‌جای `X` می‌تونی لینک صفحه‌ی برنامه رو هم بذاری، خودش اسم بسته رو از توش
-> درمیاره. پارامتر `engine` هم هست: `api` / `web` / `hybrid` (پیش‌فرض hybrid)
-> و با `force=1` می‌تونی circuit breaker رو دور بزنی.
+> به‌جای `X` لینک صفحه‌ی برنامه هم قبوله؛ اسم بسته خودش در میاد. پارامترها:
+> `engine=api|web|hybrid` (پیش‌فرض hybrid) و `force=1` برای دور زدن circuit breaker.
+> فقط برنامه‌های رایگان — برنامه‌ی پولی با کد `PAID` برمی‌گرده.
 
-فقط برنامه‌های رایگان رو سرو می‌کنه. برنامه‌ی پولی باشه با کد `PAID` برمی‌گرده.
+<details>
+<summary><b>نمونه‌ی پاسخ <code>/api/resolve</code></b> (کلیک کن)</summary>
 
-## 🚀 نصب
+```json
+{
+  "ok": true,
+  "engine": "api",
+  "packageName": "com.digikala",
+  "title": "دیجی‌کالا",
+  "versionCode": "1002003",
+  "directUrl": "https://cdn2.myket.ir/apps/.../app.apk",
+  "proxyUrl": "/api/download?pkg=com.digikala&engine=api",
+  "fileName": "com.digikala-v1002003.apk",
+  "rating": { "value": 4.3, "count": 95127, "best": 5 },
+  "installsText": "+۱۰,۰۰۰,۰۰۰",
+  "screenshots": ["https://cdn2.myket.ir/asset-files/screenshots/..."]
+}
+```
 
-**راه ساده:** توی داشبورد کلادفلر یه Worker بساز، محتوای `worker.js` رو
-جایگذاری کن و Deploy بزن. همین.
+</details>
+
+## 🚀 استقرار در ۶۰ ثانیه
+
+**از داشبورد (بدون ابزار):** یه Worker بساز، محتوای `worker.js` رو جایگذاری کن،
+Deploy بزن. همین.
 
 **با wrangler:**
 
 ```bash
-npm install -g wrangler
-wrangler login
+git clone https://github.com/USER/myket-dl.git && cd myket-dl
+npm install -g wrangler && wrangler login
 wrangler deploy
 ```
 
-`wrangler.toml` آماده‌ست. قبلش `wrangler login` یادت نره.
+`wrangler.toml` آماده‌ست — اسم ورکر روشه و با `workers_dev = true` دامنه‌ی
+رایگان `workers.dev` می‌گیری.
 
 ## 🎨 رابط کاربری
 
-صفحه‌ی `/` یه UI فارسی داره:
-
-- روی هر نتیجه مشخصه لینک از کدوم موتور اومده (چیپ API یا وب)
-- گالری اسکرین‌شات با لایت‌باکس
-- نمودار توزیع امتیاز کاربران
-- دکمه‌ی «عیب‌یابی» که دقیقاً می‌گه کدوم مرحله گیر کرده (صفحه، auth، ساخت لینک و…)
+- 🧭 استپر مرحله‌به‌مرحله + اسکلت لودینگ
+- 🖼️ گالری اسکرین‌شات با درگ و لایت‌باکس
+- 📊 نمودار توزیع امتیاز با انیمیشن
+- 🩺 پنل عیب‌یابی زنده (صفحه ← auth ← ساخت لینک ← fallback)
 
 ## 📄 لایسنس
 
 هر استفاده‌ای می‌خوای بکن. مسئولیت نحوه‌ی استفاده با خودته.
 
----
-
 <div align="center">
+  <br>
   <sub>اگه بدردت خورد، یه ⭐ به ریپو بزن</sub>
+  <br><br>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&color=00C781&section=footer" alt="footer"/>
 </div>
