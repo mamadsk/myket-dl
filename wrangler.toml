@@ -1,0 +1,10 @@
+# تنظیمات استقرار ورکر
+name = "myket-dl"
+main = "worker.js"
+compatibility_date = "2025-12-01"
+workers_dev = true
+
+# در صورت استفاده از دامنه‌ی اختصاصی، بخش routes را خودتان اضافه کنید:
+# routes = [
+#   { pattern = "apk.example.com/*", zone_name = "example.com" }
+# ]
